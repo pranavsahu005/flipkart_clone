@@ -676,11 +676,90 @@ body
     top: 110px;
     position: relative;
     left: 0.2vw;
-    width: 77.4vw;
+    width: 78.4vw;
     height: 93.5vh;
-    background-color: rgb(202, 0, 0);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
+.box3 .cub1
+{
+    position: absolute;
+    width: 220px;
+    height: 150px;
+  
+    top: 5px;
+    left: 30px;
+    background-image: url(laptop1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-
+.box3 .cub2
+{
+    position: absolute;
+    width: 240px;
+    height: 150px;
+    top: 250px;
+    left:30px;
+    background-image: url(laptop2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.box3 .cub3
+{
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    bottom: 1px;
+    left: 30px;
+    background-image: url(laptop3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.box3 .cub1 h1
+{
+    font-size :18px;
+    width: 500px;
+    left:300px;
+    position: absolute;
+}
+.box3 .cub2 h1
+{
+    font-size :18px;
+    width: 500px;
+    left:300px;
+    position: absolute;
+}
+.box3 .cub3 h1
+{
+    font-size :18px;
+    width: 500px;
+    left:300px;
+    position: absolute;
+}
+.box3 .cub1 h2
+{
+    font-size :28px;
+    width: 500px;
+    left:900px;
+    position: absolute;
+    font-weight: 550;
+}
+.box3 .cub2 h2
+{
+    font-size :28px;
+    width: 500px;
+    left:900px;
+    position: absolute;
+    font-weight: 550;
+}
+.box3 .cub3 h2
+{
+    font-size :28px;
+    width: 500px;
+    left:900px;
+    position: absolute;
+    font-weight: 550;
+}
