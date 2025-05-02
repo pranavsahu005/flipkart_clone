@@ -6,7 +6,7 @@
 }
 body
 {
-  background-color: #606772;
+  background-color: #acaeb1;
 }
 .row1
 {
@@ -24,6 +24,7 @@ body
     justify-content: space-between;
     align-items: center;
 }
+/*searchbox of box(row1)*/
 .row1 nav .searchBox
 {
     display: flex;
@@ -45,6 +46,13 @@ body
     justify-content: center;
     align-items: center;
 }
+.row1 nav .searchBox input::placeholder {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    position: relative;
+    left: 29px;
+}
+
 .row1 nav .btn
 {
     width: 150px;
@@ -79,8 +87,25 @@ body
 .row1 nav h1
 {
     color:white;
-    font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bold;
+    position: relative;
+    top:-7px;
+}
+.row1 nav p:nth-child(7) 
+{
+    color: rgb(221, 210, 2); 
+    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    position: absolute;
+    font-size: 13px;
+    font-style: italic;
+    top: 42px;
+}
+
+.row1 nav p:nth-child(7) span 
+{
+    color: rgb(255, 255, 253); 
 }
 .row2
 {
@@ -120,20 +145,482 @@ body
     position: relative;
     left: 0.5vw;
     width: 20vw;
-    height: 80vh;
+    height: 102vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
+.box1 p:nth-child(1)
+{
+    position: absolute;
+    left: 13px;
+    top: 20px;
+    font-weight:400px;
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family:Arial;
+}
+.box1 p:nth-child(1) span:nth-child(1)
+{
+    position: absolute;
+    left: 10.5px;
+    top: 120px;
+    font-weight:400px;
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family:Arial;
+}
+.box1 p:nth-child(1) span:nth-child(1) input:nth-child(1)
+{
+    position: absolute;
+    top:35px;
+    left:-5px;
+    width: 220px;
+}
+.box1 p:nth-child(2)
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: start;
+    width: 200px;
+    font-size: 13px;
+    flex-direction: column;
+    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: 550;
+    color: #212121;
+    position:absolute;
+    top: 80px;
+    left: 40px;
+}
+.box1 p:nth-child(2) span:nth-child(1)
+{
+    color:grey;
+    font-weight: 400;
+    font-style: bold;
+    position: absolute;
+    left:-17px;
+    top:-30px;
+}
+.box1 p:nth-child(2) span:nth-child(3)
+{
+    color: #000000;
+    font-weight: 100;
+    font-style: bold;
+    font-family:Arial;
+    position: relative;
+    left:-20px;
+    top:127px;
+    border: 1px solid rgb(176, 175, 175);
+    display: flex;
+    width: 80px;
+   justify-content: space-between;  
+}
+.box1 p:nth-child(2) span:nth-child(4)
+{
+    color: #000000;
+    font-weight: 100;
+    font-style: bold;
+    font-family:Arial;
+    font-size: 14px;
+    position: relative;
+    left:76px;
+    top:112px;
+}
+.box1 p:nth-child(2) span:nth-child(5)
+{
+    color: #000000;
+    font-weight: 100;
+    font-style: bold;
+    font-family:Arial;
+    position: relative;
+    left:105px;
+    top:95.2px;
+    border: 1px solid rgb(176, 175, 175);
+    display: flex;
+    width: 91px;
+   justify-content: space-between;
+}
+/*brand*/
+.box1 nav span:nth-child(1)
+{
+        position: relative;
+        left: -0.12vw;
+        top:-100px;
+        width: 20vw;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        border: 1px solid #acaeb1;
+        align-items: center;
+        justify-content: space-evenly;
+}
+    .box1 nav span:nth-child(1) h1
+ {
+        position: absolute;
+        left: 13px;;
+        font-weight: lighter;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: .3px;
+        font-family:Arial;
+       
+}
+    .box1 nav span:nth-child(1) ion-icon 
+{
+      font-size: 20px;
+      left: 219px;
+      position: absolute;
+      font-weight: 600;
+      color: #606772; 
+}
+    /*type*/
+
+    .box1 nav span:nth-child(2)
+{
+        position: relative;
+        left: -0.12vw;
+        top:-101px;
+        width: 20vw;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        border: 1px solid #acaeb1;
+        align-items: center;
+        justify-content: space-evenly;
+ }
+    .box1 nav span:nth-child(2) h2
+{
+        position: absolute;
+        left: 13px;
+        font-weight: lighter;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: .3px;
+        letter-spacing: 1px;
+        font-family:Arial;
+}
+    .box1 nav span:nth-child(2) ion-icon 
+{
+      font-size: 20px;
+      left: 219px;
+      position: absolute;
+      font-weight: 600;
+      color: #606772; 
+ }
+        /*processor*/
+    
+    .box1 nav span:nth-child(3)
+ {
+        position: relative;
+        left: -0.12vw;
+        top:-111px;
+        width: 0vw;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        border: 1px solid #acaeb1;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: none;
+ }
+    .box1 nav span:nth-child(3) h3
+{
+        position: absolute;
+        left: 13px;
+        font-weight: lighter;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 14px;
+        letter-spacing: .3px;
+        font-family:Arial;
+}
+    .box1 nav span:nth-child(3) ion-icon
+ {
+      font-size: 20px;
+      left: 203.9px;
+      position: absolute;
+      font-weight: 600;
+      color: #606772; 
+ }
+
+            /*searchbox of box1*/
+
+.box1 nav span:nth-child(4)
+{
+       position: relative;
+       left: 1vw;
+       top:-109px;
+       width: 17.7vw;
+       height: 20px;
+       background-color: rgb(251, 251, 251);
+       border-top: none;
+       border-bottom: #8f8f8f;
+       border-style: solid;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       border-width: 2px;
+       display: flex;
+       align-items: center;
+       justify-content: safe;
+}
+   .box1 nav span:nth-child(4) h4
+{
+       position: absolute;
+       left: 23px;
+       font-weight: lighter;
+       display: flex;
+       justify-content: space-evenly;
+       font-size: 14px;
+       letter-spacing: .3px;
+       font-family:Arial;
+       color: rgb(87, 87, 87);
+}
+        /*select Options of box1*/
+.box1 nav span:nth-child(5).options
+{
+    position: absolute;
+    left: 10px;
+    top:470px;
+    width: 20vw;
+    height: 300px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.box1 nav span:nth-child(5).options h1
+{
+    position: relative;
+    left: 43px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-gap-override: 10px;
+    font-weight: lighter;
+    font-size: 14px;
+    display: flex;
+}
+.box1 nav span:nth-child(5) ion-icon
+{
+    font-size: 20px;
+    left: -40px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772; 
+}
+
+.box1 nav span:nth-child(5) h2
+{
+    color: #2874f0;
+    position: relative;
+    left: 5px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    top:10px;
+    line-gap-override: 10px;
+    font-weight: bolder;
+    font-size: 13.5px;
+    display: flex;
+}
+
+   /*Generation*/
+
+   .box1 nav span:nth-child(6)
+   {
+           position: absolute;
+           left: -0.12vw;
+           top:705px;
+           width: 20vw;
+           height: 50px;
+           background-color: rgb(255, 255, 255);
+           display: flex;
+           border: 1px solid #acaeb1;
+           align-items: center;
+           justify-content: space-evenly;
+    }
+       .box1 nav span:nth-child(6) h1
+   {
+           position: absolute;
+           left: 13px;
+           font-weight: lighter;
+           display: flex;
+           justify-content: space-evenly;
+           font-size: 13px;
+           font-weight: 500;
+           letter-spacing: .3px;
+           letter-spacing: 1px;
+           font-family:Arial;
+   }
+       .box1 nav span:nth-child(6) ion-icon 
+   {
+         font-size: 20px;
+         left: 219px;
+         position: absolute;
+         font-weight: 600;
+         color: #606772; 
+    }
+
+    /*RAM*/
+
+   .box1 nav span:nth-child(7)
+   {
+           position: absolute;
+           left: -0.12vw;
+           top:754px;
+           width: 20vw;
+           height: 50px;
+           background-color: rgb(255, 255, 255);
+           display: flex;
+           border: 1px solid #acaeb1;
+           align-items: center;
+           justify-content: space-evenly;
+    }
+       .box1 nav span:nth-child(7) h2
+   {
+           position: absolute;
+           left: 13px;
+           font-weight: lighter;
+           display: flex;
+           justify-content: space-evenly;
+           font-size: 13px;
+           font-weight: 500;
+           letter-spacing: .3px;
+           letter-spacing: 1px;
+           font-family:Arial;
+   }
+       .box1 nav span:nth-child(7) ion-icon 
+   {
+         font-size: 20px;
+         left: 219px;
+         position: absolute;
+         font-weight: 600;
+         color: #606772; 
+    }
+    
+    /*SSD*/
+
+    .box1 nav span:nth-child(8)
+    {
+            position: absolute;
+            left: -0.12vw;
+            top:800px;
+            width: 20vw;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            border: 1px solid #acaeb1;
+            align-items: center;
+            justify-content: space-evenly;
+     }
+        .box1 nav span:nth-child(8) h3
+    {
+            position: absolute;
+            left: 13px;
+            font-weight: lighter;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: .3px;
+            letter-spacing: 1px;
+            font-family:Arial;
+    }
+        .box1 nav span:nth-child(8) ion-icon 
+    {
+          font-size: 20px;
+          left: 209px;
+          position: absolute;
+          font-weight: 600;
+          color: #606772; 
+     }
+     
+        /*Graphics*/
+
+       .box1 nav span:nth-child(9)
+       {
+               position: absolute;
+               left: -0.12vw;
+               top:852px;
+               width: 20vw;
+               height: 50px;
+               background-color: rgb(255, 255, 255);
+               display: flex;
+               border: 1px solid #acaeb1;
+               align-items: center;
+               justify-content: space-evenly;
+        }
+           .box1 nav span:nth-child(9) h4
+       {
+               position: absolute;
+               left: 13px;
+               font-weight: lighter;
+               display: flex;
+               justify-content: space-evenly;
+               font-size: 13px;
+               font-weight: 500;
+               letter-spacing: .3px;
+               letter-spacing: 1px;
+               font-family:Arial;
+       }
+           .box1 nav span:nth-child(9) ion-icon 
+       {
+             font-size: 20px;
+             left: 219px;
+             position: absolute;
+             font-weight: 600;
+             color: #606772; 
+        }
+
+
+        .box1 nav span:nth-child(10)
+        {
+                position: absolute;
+                left: -0.12vw;
+                bottom: 10px;
+                width: 20vw;
+                height: 50px;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                border: 1px solid #acaeb1;
+                align-items: center;
+                justify-content: space-evenly;
+         }
+            .box1 nav span:nth-child(10) h5
+        {
+                position: absolute;
+                left: 13px;
+                font-weight: lighter;
+                display: flex;
+                justify-content: space-evenly;
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: .3px;
+                letter-spacing: 1px;
+                font-family:Arial;
+        }
+            .box1 nav span:nth-child(10) ion-icon 
+        {
+              font-size: 20px;
+              left: 219px;
+              position: absolute;
+              font-weight: 600;
+              color: #606772; 
+         }
+/* Box 2 */
 .box2
 {
     top: 125px;
     position: absolute;
     left: 21vw;
     width: 77.4vw;
-    height: 100px;
+    height: 120px;
     background-color: rgb(255, 255, 255);
- 
 }
 .box2 p:nth-child(1)
 {
@@ -146,9 +633,54 @@ body
 }
 .box2 p:nth-child(2)
 {
-    display: flex;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    width: 800px;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top:50px;
+    left: 20px;
+    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+   font-style: bold;
+    font-weight: 550;
+    color: #212121; 
 }
+.box2 p:nth-child(3)
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: start;
+    width: 800px;
+    font-size: 15px;
+    font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #212121;
+    position:relative;
+    top: 80px;
+    left: -20px;
+}
+.box2 p:nth-child(3) span:nth-child(1)
+{
+    color: #000000;
+    font-weight: 550;
+    font-style: bold;
+}
+.box2 p:nth-child(3) span:nth-child(2)
+{
+    color: #2874f0;
+    cursor: default;
+    border-bottom: 2px solid #2874f0;
+    font-weight: 550;
+    font-style: bold;
+}
+.box3
+{
+    top: 110px;
+    position: relative;
+    left: 0.2vw;
+    width: 77.4vw;
+    height: 93.5vh;
+    background-color: rgb(202, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
 
