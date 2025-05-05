@@ -1,43 +1,48 @@
-*
-{
+* {
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
-body
-{
-  background-color: #acaeb1;
+
+body {
+    background-color: #acaeb1;
+    overflow-x: hidden;
+    
 }
-.row1
-{
+
+.row1 {
     background-color: #2874f0;
     width: 100vw;
     height: 70px;
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;    
+    z-index: 9999999999999999999;
 }
-.row1 nav
-{
+
+.row1 nav {
     width: 80%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 /*searchbox of box(row1)*/
-.row1 nav .searchBox
-{
+.row1 nav .searchBox {
     display: flex;
 }
-.row1 nav .searchBox input
-{
+
+.row1 nav .searchBox input {
     width: 360px;
     height: 40px;
     outline: none;
     border: none;
 }
-.row1 nav .searchBox .icon
-{
+
+.row1 nav .searchBox .icon {
     background-color: white;
     width: 40px;
     height: 40px;
@@ -46,6 +51,7 @@ body
     justify-content: center;
     align-items: center;
 }
+
 .row1 nav .searchBox input::placeholder {
     color: rgb(39, 39, 39);
     font-size: 18px;
@@ -53,8 +59,7 @@ body
     left: 29px;
 }
 
-.row1 nav .btn
-{
+.row1 nav .btn {
     width: 150px;
     height: 40px;
     color: blue;
@@ -63,38 +68,38 @@ body
     font-family: arial;
     letter-spacing: 1px;
 }
-.row1 nav p:nth-child(4)
-{
+
+.row1 nav p:nth-child(4) {
     color: white;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-.row1 nav p:nth-child(5)
-{
+
+.row1 nav p:nth-child(5) {
     color: white;
     font-size: 17px;
     font-family: arial;
     font-weight: bold;
 }
-.row1 nav p:nth-child(6)
-{
-    color:white;
+
+.row1 nav p:nth-child(6) {
+    color: white;
     font-size: 17px;
     font-family: arial;
     font-weight: bold;
 }
-.row1 nav h1
-{
-    color:white;
+
+.row1 nav h1 {
+    color: white;
     font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bold;
     position: relative;
-    top:-7px;
+    top: -7px;
 }
-.row1 nav p:nth-child(7) 
-{
-    color: rgb(221, 210, 2); 
+
+.row1 nav p:nth-child(7) {
+    color: rgb(221, 210, 2);
     font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: 800;
     position: absolute;
@@ -103,12 +108,11 @@ body
     top: 42px;
 }
 
-.row1 nav p:nth-child(7) span 
-{
-    color: rgb(255, 255, 253); 
+.row1 nav p:nth-child(7) span {
+    color: rgb(255, 255, 253);
 }
-.row2
-{
+
+.row2 {
     position: relative;
     width: 100vw;
     height: 50px;
@@ -117,9 +121,10 @@ body
     justify-content: space-evenly;
     align-items: center;
     font-weight: bold;
+    margin-top: 70px;
 }
-.box
-{
+
+.box {
     top: 5px;
     position: relative;
     left: 0.5vw;
@@ -129,60 +134,60 @@ body
     display: flex;
     align-items: center;
 }
-.box h1
-{
+
+.box h1 {
     position: absolute;
     left: 13px;
     font-weight: lighter;
     display: flex;
     font-size: 18px;
     letter-spacing: 1px;
-    font-family:Arial;
+    font-family: Arial;
 }
-.box1
-{
+
+.box1 {
     top: 5.8px;
     position: relative;
     left: 0.5vw;
     width: 20vw;
-    height: 102vh;
+    height: 129vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
-.box1 p:nth-child(1)
-{
+
+.box1 p:nth-child(1) {
     position: absolute;
     left: 13px;
     top: 20px;
-    font-weight:400px;
+    font-weight: 400px;
     display: flex;
     font-size: 12px;
     letter-spacing: 1px;
-    font-family:Arial;
+    font-family: Arial;
 }
-.box1 p:nth-child(1) span:nth-child(1)
-{
+
+.box1 p:nth-child(1) span:nth-child(1) {
     position: absolute;
     left: 10.5px;
     top: 120px;
-    font-weight:400px;
+    font-weight: 400px;
     display: flex;
     font-size: 12px;
     letter-spacing: 1px;
-    font-family:Arial;
+    font-family: Arial;
 }
-.box1 p:nth-child(1) span:nth-child(1) input:nth-child(1)
-{
+
+.box1 p:nth-child(1) span:nth-child(1) input:nth-child(1) {
     position: absolute;
-    top:35px;
-    left:-5px;
+    top: 35px;
+    left: -5px;
     width: 220px;
 }
-.box1 p:nth-child(2)
-{
+
+.box1 p:nth-child(2) {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: start;
     width: 200px;
     font-size: 13px;
@@ -190,204 +195,204 @@ body
     font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: 550;
     color: #212121;
-    position:absolute;
+    position: absolute;
     top: 80px;
     left: 40px;
 }
-.box1 p:nth-child(2) span:nth-child(1)
-{
-    color:grey;
+
+.box1 p:nth-child(2) span:nth-child(1) {
+    color: grey;
     font-weight: 400;
     font-style: bold;
     position: absolute;
-    left:-17px;
-    top:-30px;
+    left: -17px;
+    top: -30px;
 }
-.box1 p:nth-child(2) span:nth-child(3)
-{
+
+.box1 p:nth-child(2) span:nth-child(3) {
     color: #000000;
     font-weight: 100;
     font-style: bold;
-    font-family:Arial;
+    font-family: Arial;
     position: relative;
-    left:-20px;
-    top:127px;
+    left: -20px;
+    top: 127px;
     border: 1px solid rgb(176, 175, 175);
     display: flex;
     width: 80px;
-   justify-content: space-between;  
+    justify-content: space-between;
 }
-.box1 p:nth-child(2) span:nth-child(4)
-{
+
+.box1 p:nth-child(2) span:nth-child(4) {
     color: #000000;
     font-weight: 100;
     font-style: bold;
-    font-family:Arial;
+    font-family: Arial;
     font-size: 14px;
     position: relative;
-    left:76px;
-    top:112px;
+    left: 76px;
+    top: 112px;
 }
-.box1 p:nth-child(2) span:nth-child(5)
-{
+
+.box1 p:nth-child(2) span:nth-child(5) {
     color: #000000;
     font-weight: 100;
     font-style: bold;
-    font-family:Arial;
+    font-family: Arial;
     position: relative;
-    left:105px;
-    top:95.2px;
+    left: 105px;
+    top: 95.2px;
     border: 1px solid rgb(176, 175, 175);
     display: flex;
     width: 91px;
-   justify-content: space-between;
+    justify-content: space-between;
 }
+
 /*brand*/
-.box1 nav span:nth-child(1)
-{
-        position: relative;
-        left: -0.12vw;
-        top:-100px;
-        width: 20vw;
-        height: 50px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        border: 1px solid #acaeb1;
-        align-items: center;
-        justify-content: space-evenly;
+.box1 nav span:nth-child(1) {
+    position: relative;
+    left: -0.12vw;
+    top: -130px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
 }
-    .box1 nav span:nth-child(1) h1
- {
-        position: absolute;
-        left: 13px;;
-        font-weight: lighter;
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: .3px;
-        font-family:Arial;
-       
-}
-    .box1 nav span:nth-child(1) ion-icon 
-{
-      font-size: 20px;
-      left: 219px;
-      position: absolute;
-      font-weight: 600;
-      color: #606772; 
-}
-    /*type*/
 
-    .box1 nav span:nth-child(2)
-{
-        position: relative;
-        left: -0.12vw;
-        top:-101px;
-        width: 20vw;
-        height: 50px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        border: 1px solid #acaeb1;
-        align-items: center;
-        justify-content: space-evenly;
- }
-    .box1 nav span:nth-child(2) h2
-{
-        position: absolute;
-        left: 13px;
-        font-weight: lighter;
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: .3px;
-        letter-spacing: 1px;
-        font-family:Arial;
-}
-    .box1 nav span:nth-child(2) ion-icon 
-{
-      font-size: 20px;
-      left: 219px;
-      position: absolute;
-      font-weight: 600;
-      color: #606772; 
- }
-        /*processor*/
-    
-    .box1 nav span:nth-child(3)
- {
-        position: relative;
-        left: -0.12vw;
-        top:-111px;
-        width: 0vw;
-        height: 50px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        border: 1px solid #acaeb1;
-        align-items: center;
-        justify-content: space-evenly;
-        border-bottom: none;
- }
-    .box1 nav span:nth-child(3) h3
-{
-        position: absolute;
-        left: 13px;
-        font-weight: lighter;
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 14px;
-        letter-spacing: .3px;
-        font-family:Arial;
-}
-    .box1 nav span:nth-child(3) ion-icon
- {
-      font-size: 20px;
-      left: 203.9px;
-      position: absolute;
-      font-weight: 600;
-      color: #606772; 
- }
+.box1 nav span:nth-child(1) h1 {
+    position: absolute;
+    left: 13px;
+    ;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    font-family: Arial;
 
-            /*searchbox of box1*/
+}
 
-.box1 nav span:nth-child(4)
-{
-       position: relative;
-       left: 1vw;
-       top:-109px;
-       width: 17.7vw;
-       height: 20px;
-       background-color: rgb(251, 251, 251);
-       border-top: none;
-       border-bottom: #8f8f8f;
-       border-style: solid;
-       border-top: none;
-       border-left: none;
-       border-right: none;
-       border-width: 2px;
-       display: flex;
-       align-items: center;
-       justify-content: safe;
+.box1 nav span:nth-child(1) ion-icon {
+    font-size: 20px;
+    left: 219px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
 }
-   .box1 nav span:nth-child(4) h4
-{
-       position: absolute;
-       left: 23px;
-       font-weight: lighter;
-       display: flex;
-       justify-content: space-evenly;
-       font-size: 14px;
-       letter-spacing: .3px;
-       font-family:Arial;
-       color: rgb(87, 87, 87);
+
+/*type*/
+
+.box1 nav span:nth-child(2) {
+    position: relative;
+    left: -0.12vw;
+    top: -131px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
 }
-        /*select Options of box1*/
-.box1 nav span:nth-child(5).options
-{
+
+.box1 nav span:nth-child(2) h2 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(2) ion-icon {
+    font-size: 20px;
+    left: 219px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/*processor*/
+
+.box1 nav span:nth-child(3) {
+    position: relative;
+    left: -0.12vw;
+    top: -121px;
+    width: 0vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: none;
+}
+
+.box1 nav span:nth-child(3) h3 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    letter-spacing: .3px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(3) ion-icon {
+    font-size: 20px;
+    left: 203.9px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+    top: -2px;
+}
+
+/*searchbox of box1*/
+
+.box1 nav span:nth-child(4) {
+    position: relative;
+    left: 1vw;
+    top: -129px;
+    width: 17.7vw;
+    height: 20px;
+    background-color: rgb(251, 251, 251);
+    border-bottom: #8f8f8f;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+}
+
+.box1 nav span:nth-child(4) h4 {
+    position: absolute;
+    left: 23px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    letter-spacing: .3px;
+    font-family: Arial;
+    color: rgb(87, 87, 87);
+}
+
+/*select Options of box1*/
+.box1 nav span:nth-child(5).options {
     position: absolute;
     left: 10px;
-    top:470px;
+    top: 470px;
     width: 20vw;
     height: 300px;
     gap: 12px;
@@ -395,8 +400,8 @@ body
     flex-direction: column;
     box-sizing: border-box;
 }
-.box1 nav span:nth-child(5).options h1
-{
+
+.box1 nav span:nth-child(5).options h1 {
     position: relative;
     left: 43px;
     word-spacing: 1px;
@@ -406,360 +411,737 @@ body
     font-size: 14px;
     display: flex;
 }
-.box1 nav span:nth-child(5) ion-icon
-{
+
+.box1 nav span:nth-child(5) ion-icon {
     font-size: 20px;
     left: -40px;
     position: absolute;
     font-weight: 600;
-    color: #606772; 
+    color: #606772;
 }
 
-.box1 nav span:nth-child(5) h2
-{
+.box1 nav span:nth-child(5) h2 {
     color: #2874f0;
     position: relative;
     left: 5px;
     word-spacing: 1px;
     letter-spacing: 1px;
-    top:10px;
+    top: 10px;
     line-gap-override: 10px;
     font-weight: bolder;
     font-size: 13.5px;
     display: flex;
 }
 
-   /*Generation*/
+/*Generation*/
 
-   .box1 nav span:nth-child(6)
-   {
-           position: absolute;
-           left: -0.12vw;
-           top:705px;
-           width: 20vw;
-           height: 50px;
-           background-color: rgb(255, 255, 255);
-           display: flex;
-           border: 1px solid #acaeb1;
-           align-items: center;
-           justify-content: space-evenly;
-    }
-       .box1 nav span:nth-child(6) h1
-   {
-           position: absolute;
-           left: 13px;
-           font-weight: lighter;
-           display: flex;
-           justify-content: space-evenly;
-           font-size: 13px;
-           font-weight: 500;
-           letter-spacing: .3px;
-           letter-spacing: 1px;
-           font-family:Arial;
-   }
-       .box1 nav span:nth-child(6) ion-icon 
-   {
-         font-size: 20px;
-         left: 219px;
-         position: absolute;
-         font-weight: 600;
-         color: #606772; 
-    }
+.box1 nav span:nth-child(6) {
+    position: absolute;
+    left: -0.12vw;
+    top: 700px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-    /*RAM*/
+.box1 nav span:nth-child(6) h1 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
 
-   .box1 nav span:nth-child(7)
-   {
-           position: absolute;
-           left: -0.12vw;
-           top:754px;
-           width: 20vw;
-           height: 50px;
-           background-color: rgb(255, 255, 255);
-           display: flex;
-           border: 1px solid #acaeb1;
-           align-items: center;
-           justify-content: space-evenly;
-    }
-       .box1 nav span:nth-child(7) h2
-   {
-           position: absolute;
-           left: 13px;
-           font-weight: lighter;
-           display: flex;
-           justify-content: space-evenly;
-           font-size: 13px;
-           font-weight: 500;
-           letter-spacing: .3px;
-           letter-spacing: 1px;
-           font-family:Arial;
-   }
-       .box1 nav span:nth-child(7) ion-icon 
-   {
-         font-size: 20px;
-         left: 219px;
-         position: absolute;
-         font-weight: 600;
-         color: #606772; 
-    }
-    
-    /*SSD*/
+.box1 nav span:nth-child(6) ion-icon {
+    font-size: 20px;
+    left: 219px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
 
-    .box1 nav span:nth-child(8)
-    {
-            position: absolute;
-            left: -0.12vw;
-            top:800px;
-            width: 20vw;
-            height: 50px;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            border: 1px solid #acaeb1;
-            align-items: center;
-            justify-content: space-evenly;
-     }
-        .box1 nav span:nth-child(8) h3
-    {
-            position: absolute;
-            left: 13px;
-            font-weight: lighter;
-            display: flex;
-            justify-content: space-evenly;
-            font-size: 13px;
-            font-weight: 500;
-            letter-spacing: .3px;
-            letter-spacing: 1px;
-            font-family:Arial;
-    }
-        .box1 nav span:nth-child(8) ion-icon 
-    {
-          font-size: 20px;
-          left: 209px;
-          position: absolute;
-          font-weight: 600;
-          color: #606772; 
-     }
-     
-        /*Graphics*/
+/*RAM*/
 
-       .box1 nav span:nth-child(9)
-       {
-               position: absolute;
-               left: -0.12vw;
-               top:852px;
-               width: 20vw;
-               height: 50px;
-               background-color: rgb(255, 255, 255);
-               display: flex;
-               border: 1px solid #acaeb1;
-               align-items: center;
-               justify-content: space-evenly;
-        }
-           .box1 nav span:nth-child(9) h4
-       {
-               position: absolute;
-               left: 13px;
-               font-weight: lighter;
-               display: flex;
-               justify-content: space-evenly;
-               font-size: 13px;
-               font-weight: 500;
-               letter-spacing: .3px;
-               letter-spacing: 1px;
-               font-family:Arial;
-       }
-           .box1 nav span:nth-child(9) ion-icon 
-       {
-             font-size: 20px;
-             left: 219px;
-             position: absolute;
-             font-weight: 600;
-             color: #606772; 
-        }
+.box1 nav span:nth-child(7) {
+    position: absolute;
+    left: -0.12vw;
+    top: 749px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.box1 nav span:nth-child(7) h2 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
 
-        .box1 nav span:nth-child(10)
-        {
-                position: absolute;
-                left: -0.12vw;
-                bottom: 10px;
-                width: 20vw;
-                height: 50px;
-                background-color: rgb(255, 255, 255);
-                display: flex;
-                border: 1px solid #acaeb1;
-                align-items: center;
-                justify-content: space-evenly;
-         }
-            .box1 nav span:nth-child(10) h5
-        {
-                position: absolute;
-                left: 13px;
-                font-weight: lighter;
-                display: flex;
-                justify-content: space-evenly;
-                font-size: 13px;
-                font-weight: 500;
-                letter-spacing: .3px;
-                letter-spacing: 1px;
-                font-family:Arial;
-        }
-            .box1 nav span:nth-child(10) ion-icon 
-        {
-              font-size: 20px;
-              left: 219px;
-              position: absolute;
-              font-weight: 600;
-              color: #606772; 
-         }
+.box1 nav span:nth-child(7) ion-icon {
+    font-size: 20px;
+    left: 219px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/*SSD*/
+
+.box1 nav span:nth-child(8) {
+    position: absolute;
+    left: -0.12vw;
+    top: 847px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1 nav span:nth-child(8) h3 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(8) ion-icon {
+    font-size: 20px;
+    left: 209px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/*Graphics*/
+
+.box1 nav span:nth-child(9) {
+    position: absolute;
+    left: -0.12vw;
+    top: 896px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1 nav span:nth-child(9) h4 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(9) ion-icon {
+    font-size: 20px;
+    left: 210px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/**/
+.box1 nav span:nth-child(10) {
+    position: absolute;
+    left: -0.12vw;
+    bottom: 0px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1 nav span:nth-child(10) h5 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(10) ion-icon {
+    font-size: 20px;
+    left: 208px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/*Ram*/
+.box1 nav span:nth-child(11) {
+    position: absolute;
+    left: -0.12vw;
+    top: 798px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1 nav span:nth-child(11) h6 {
+    position: absolute;
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(11) ion-icon {
+    font-size: 20px;
+    left: 209px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+.box1 nav span:nth-child(12) {
+    position: absolute;
+    left: -0.12vw;
+    top: 798px;
+    width: 20vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid #acaeb1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1 nav span:nth-child(12) h7 {
+    position: absolute;
+
+    left: 13px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    letter-spacing: 1px;
+    font-family: Arial;
+}
+
+.box1 nav span:nth-child(12) ion-icon {
+    font-size: 20px;
+    left: 208px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
 /* Box 2 */
-.box2
-{
+.box2 {
     top: 125px;
     position: absolute;
     left: 21vw;
-    width: 77.4vw;
+    width: 78.4vw;
     height: 120px;
     background-color: rgb(255, 255, 255);
 }
-.box2 p:nth-child(1)
-{
+
+.box2 p:nth-child(1) {
     position: absolute;
     color: rgb(179, 167, 167);
-    top:20px;
+    top: 20px;
     left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
-.box2 p:nth-child(2)
-{
+
+.box2 p:nth-child(2) {
     position: absolute;
     color: rgb(0, 0, 0);
-    top:50px;
+    top: 50px;
     left: 20px;
     font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
     font-size: 16px;
-   font-style: bold;
+    font-style: bold;
     font-weight: 550;
-    color: #212121; 
+    color: #212121;
 }
-.box2 p:nth-child(3)
-{
+
+.box2 p:nth-child(3) {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: start;
     width: 800px;
     font-size: 15px;
     font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: 400;
     color: #212121;
-    position:relative;
+    position: relative;
     top: 80px;
     left: -20px;
 }
-.box2 p:nth-child(3) span:nth-child(1)
-{
+
+.box2 p:nth-child(3) span:nth-child(1) {
     color: #000000;
     font-weight: 550;
     font-style: bold;
 }
-.box2 p:nth-child(3) span:nth-child(2)
-{
+
+.box2 p:nth-child(3) span:nth-child(2) {
     color: #2874f0;
     cursor: default;
     border-bottom: 2px solid #2874f0;
     font-weight: 550;
     font-style: bold;
 }
-.box3
-{
+
+/* Box 3 */
+.box3 {
     top: 110px;
     position: relative;
     left: 0.2vw;
-    width: 78.4vw;
-    height: 93.5vh;
+    width: 85vw;
+    height: 135vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
+    margin-top: -7px;
+    margin-left: -1px;
 }
-.box3 .cub1
-{
+
+/* ============ Cube 1 ============ */
+.box3 .cub1 {
     position: absolute;
     width: 220px;
     height: 150px;
-  
-    top: 5px;
+    top: 20px;
     left: 30px;
-    background-image: url(laptop1.jpg);
+    background-image: url(../images/laptop3.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.box3 .cub2
-{
+/* Heart icon and text next to it - cub1 */
+.box3 .cub1 p {
     position: absolute;
-    width: 240px;
-    height: 150px;
-    top: 250px;
-    left:30px;
-    background-image: url(laptop2.jpg);
+    left: 270px;
+    top: -10px;
+}
+
+.box3 .cub1 p ion-icon {
+    position: absolute;
+    left: -29px;
+    top: 2px;
+}
+
+/* Title text inside cub1 */
+.box3 .cub1 h1 {
+    font-size: 18px;
+    width: 500px;
+    top: 20px;
+    left: 300px;
+    position: absolute;
+}
+
+
+/* Price or spec highlight text - cub1 */
+.box3 .cub1 h2 {
+    font-size: 28px;
+    width: 500px;
+    left: 900px;
+    position: absolute;
+    font-weight: 550;
+}
+
+/*Free Dlivery*/
+.box3 .cub1 h2 p {
+    color: #5d5e5f;
+    position: relative;
+    left: 5px;
+    top: 16px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-gap-override: 10px;
+    font-weight: lighter;
+    font-size: 12.5px;
+    display: flex;
+}
+
+/*Bank Offer*/
+.box3 .cub1 h2 p2 {
+    color: #0fa51c;
+    position: relative;
+    left: 5px;
+    top: 36px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-gap-override: 10px;
+    font-weight: 700;
+    font-size: 15.5px;
+    display: flex;
+}
+
+/* Add to compare section - cub1 */
+.box3 .cub1 h3 {
+    position: relative;
+    left: 43px;
+    top: 210px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 17px;
+    display: flex;
+}
+
+.box3 .cub1 h3 ion-icon {
+    font-size: 20px;
+    left: -40px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/* Features list container - cub1 */
+.box3 .cub1 .features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    left: 300px;
+    width: 500px;
+    height: 100%;
+    top: 70px;
+}
+
+/* Each feature item - cub1 */
+.box3 .cub1 .features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Icon inside feature list - cub1 */
+.box3 .cub1 .features li ion-icon {
+    font-size: 5px;
+    color: #888a8d;
+    margin-top: 6.5px;
+}
+
+/* assumed */
+.box3 .cub1 .img {
+    position: absolute;
+    background-image: url(../Images/Capture1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-   
+    width: 80px;
+    padding-top: 30px;
+    height: 100px;
+    right: -300px;
+    top:3px;
+    left:70.2vw;
 }
-.box3 .cub3
-{
+
+
+/* ============ Cube 2 ============ */
+.box3 .cub2 {
     position: absolute;
     width: 220px;
-    height: 200px;
-    bottom: 1px;
+    height: 170px;
+    top: 300px;
     left: 30px;
-    background-image: url(laptop3.jpg);
+    background-image: url(../Images/laptop2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
-.box3 .cub1 h1
-{
-    font-size :18px;
-    width: 500px;
-    left:300px;
+
+/* Heart icon and text next to it - cub2 */
+.box3 .cub2 p {
     position: absolute;
+    left: 270px;
+    top: 5px;
 }
-.box3 .cub2 h1
-{
-    font-size :18px;
-    width: 500px;
-    left:300px;
+
+.box3 .cub2 p ion-icon {
     position: absolute;
+    left: -29px;
+    top: 3px;
 }
-.box3 .cub3 h1
-{
-    font-size :18px;
-    width: 500px;
-    left:300px;
+
+/* Divider line - cub2 */
+.box3 .cub2 p2 {
     position: absolute;
+    left: -30px;
+    top: -15px;
+    width: 100vw;
+    border-top: 2px solid rgb(184, 182, 182);
 }
-.box3 .cub1 h2
-{
-    font-size :28px;
+
+/* Title text inside cub2 */
+.box3 .cub2 h1 {
+    font-size: 18px;
     width: 500px;
-    left:900px;
+    left: 300px;
+    position: absolute;
+    top: 35px;
+}
+
+/* Price or spec highlight text - cub2 */
+.box3 .cub2 h2 {
+    font-size: 28px;
+    width: 500px;
+    left: 900px;
     position: absolute;
     font-weight: 550;
 }
-.box3 .cub2 h2
-{
-    font-size :28px;
+
+/* Add to compare section - cub2 */
+.box3 .cub2 h3 {
+    position: relative;
+    left: 43px;
+    top: 310px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 17px;
+    display: flex;
+}
+
+.box3 .cub2 h3 ion-icon {
+    font-size: 20px;
+    left: -40px;
+    position: absolute;
+    font-weight: 600;
+    color: #606772;
+}
+
+/*Free Dlivery*/
+.box3 .cub2 h2 p3 {
+    color: #5d5e5f;
+    position: relative;
+    left: 5px;
+    top: 45px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-gap-override: 10px;
+    font-weight: lighter;
+    font-size: 12.5px;
+    display: flex;
+}
+
+/*Cut Price*/
+.box3 .cub2 h2 p4 {
+    text-decoration: line-through;
+    font-size: 18px;
+    top: 50px;
+    left: 300px;
+    color: grey;
+    font-weight: 500;
+
+}
+
+/*offer*/
+.box3 .cub2 h2 p5 {
+    color: #2874f0;
+    position: relative;
+    left: 75px;
+    top: -22px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-gap-override: 10px;
+    font-weight: 700;
+    font-size: 18.5px;
+    display: flex;
+}
+
+/*Bank Offer*/
+.box3 .cub2 h2 p6 {
+    color: #0fa51c;
+    position: relative;
+    left: 5px;
+    top: 36px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-gap-override: 10px;
+    font-weight: 700;
+    font-size: 15.5px;
+    display: flex;
+}
+/* assumed */
+.box3 .cub2 h2 p1 {
+    position: relative;
+    background-image: url(../Images/Capture1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    padding-top: 30px;
+    height: 100px;
+}
+
+
+
+/* Feature items - cub2 */
+.box3 .cub2 .features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    left: 300px;
+    top: 130px;
     width: 500px;
-    left:900px;
+    height: 20%;
+    position: relative;
+}
+
+/* Icon in feature list - cub2 */
+.box3 .cub2 .features li ion-icon {
+    font-size: 5px;
+    color: #888a8d;
+    margin-top: 6.5px;
+}
+
+/* ============ Cube 3 ============ */
+.box3 .cub3 {
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    bottom: 70px;
+    left: 30px;
+    background-image: url(../Images/laptop1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Heart icon and text next to it - cub3 */
+.box3 .cub3 p {
+    position: absolute;
+    left: 270px;
+    top: -15px;
+}
+
+.box3 .cub3 p ion-icon {
+    position: absolute;
+    left: -29px;
+    top: 2px;
+}
+
+/* Divider line - cub3 */
+.box3 .cub3 p2 {
+    position: absolute;
+    left: -30px;
+    top: -50px;
+    width: 100vw;
+    border-top: 2px solid rgb(184, 182, 182);
+}
+
+/* Title text - cub3 */
+.box3 .cub3 h1 {
+    font-size: 18px;
+    width: 500px;
+    left: 300px;
+    top: 20px;
+    position: absolute;
+}
+
+/* Price or spec highlight - cub3 */
+.box3 .cub3 h2 {
+    font-size: 28px;
+    width: 500px;
+    left: 900px;
     position: absolute;
     font-weight: 550;
 }
-.box3 .cub3 h2
-{
-    font-size :28px;
+
+
+/* Feature items - cub3 */
+.box3 .cub3 .features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    left: 300px;
+    bottom: -90px;
     width: 500px;
-    left:900px;
-    position: absolute;
-    font-weight: 550;
+    height: 20%;
+    position: relative;
+}
+
+/* Icon in feature list - cub3 */
+.box3 .cub3 .features li ion-icon {
+    font-size: 5px;
+    color: #888a8d;
+    margin-top: 6.5px;
+}
+
+/*Rating*/
+.rating{
+    color: #0fa51c;
+    top:20px;
+    position: relative;
+}
+.rating p2{
+    position: relative;
+    top:20px;
+    color: gray;
+    font-weight: 400;
+}
+.rating p1{
+    color:white;
+   background-color: #0fa51c;
+    top:50px;
+    left:300px;
+    position: relative;
 }
